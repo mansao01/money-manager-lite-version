@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Money Manager</string>
+    <string name="title">Title</string>
+    <string name="income">income</string>
+    <string name="outcome">outcome</string>
+    <string name="total_money">Total Money</string>
+    <string name="profile">profile</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="add">add</string>
+    <string name="transaction">Transaksi</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+    <string name="delete">Delete</string>
+    <string name="deleted">item telah di hapus</string>
+    <string name="no">tidak</string>
+    <string name="cancel">cancel</string>
+    <string name="message_cancel">Batalkan Perubahan?</string>
+    <string name="message_delete">Hapus data?</string>
+    <string name="yes">Ya</string>
+    <string name="update">Update</string>
+    <string name="change">Change</string>
+    <string name="save">Save</string>
+    <string name="empty">field tidak boleh kosong</string>
+    <string name="added">data telah di tambahkan</string>
+    <string name="anda_belum_menambahkan_transaksi">Anda Belum menambahkan transaksi</string>
+</resources>
