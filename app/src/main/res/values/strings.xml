@@ -24,4 +24,9 @@
     <string name="empty">field tidak boleh kosong</string>
     <string name="added">data telah di tambahkan</string>
     <string name="anda_belum_menambahkan_transaksi">Anda Belum menambahkan transaksi</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="register_here">Don\'t have account? Register</string>
+    <string name="money_manager">Money Manager</string>
 </resources>
