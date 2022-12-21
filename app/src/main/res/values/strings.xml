@@ -34,4 +34,6 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="plus">+</string>
     <string name="min">-</string>
+    <string name="zero">0</string>
+    <string name="equal">= Rp.</string>
 </resources>

@@ -75,8 +75,6 @@
 
                 <EditText
                     android:id="@+id/edtUsername"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawableTint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/username" />

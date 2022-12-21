@@ -43,8 +43,8 @@ class ProfileActivity : AppCompatActivity() {
         profileViewModel.getUser().observe(this) {
             if (it.isLogin) {
                 binding.apply {
-                    tvEmail.text = it.email
-                    tvUsername.text = it.username
+                    tvEmail.text = StringBuilder(getString(R.string.email)).append(": ${it.email}")
+                    tvUsername.text = StringBuilder(getString(R.string.username)).append(": ${it.username}")
                 }
             }
         }

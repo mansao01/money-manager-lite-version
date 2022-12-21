@@ -97,13 +97,25 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.apply {
             binding.apply {
                 getIncome().observe(this@MainActivity) {
-                    tvIncome.text = it.toString()
+                    if (it == null){
+                        tvIncome.text = getString(R.string.zero)
+                    }else{
+                        tvIncome.text = StringBuilder(getString(R.string.plus)).append(it.toString())
+                    }
                 }
                 getOutcome().observe(this@MainActivity) {
-                    tvOutcome.text = it.toString()
+                    if (it == null){
+                        tvOutcome.text = getString(R.string.zero)
+                    }else{
+                        tvOutcome.text = StringBuilder(getString(R.string.min)).append(it.toString())
+                    }
                 }
                 getTotalMoney().observe(this@MainActivity) {
-                    tvTotal.text = it.toString()
+                    if (it == null){
+                        tvTotal.text = getString(R.string.zero)
+                    }else{
+                        tvTotal.text = StringBuilder(getString(R.string.equal)).append(it.toString())
+                    }
                 }
             }
         }
