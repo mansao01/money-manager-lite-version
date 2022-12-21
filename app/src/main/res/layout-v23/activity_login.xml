@@ -25,8 +25,7 @@
         android:fontFamily="serif"
         android:text="@string/money_manager"
         android:textColor="@color/white"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +34,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="366dp"
+        android:layout_height="446dp"
         android:backgroundTint="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,8 +74,6 @@
 
                 <EditText
                     android:id="@+id/edtUsername"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawableTint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/username" />

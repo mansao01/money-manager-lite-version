@@ -29,4 +29,9 @@
     <string name="password">password</string>
     <string name="register_here">Don\'t have account? Register</string>
     <string name="money_manager">Money Manager</string>
+    <string name="register">Register</string>
+    <string name="email">email</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="plus">+</string>
+    <string name="min">-</string>
 </resources>

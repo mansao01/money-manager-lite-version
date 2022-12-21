@@ -40,6 +40,7 @@
             android:id="@+id/edt_income"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/income" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,6 +53,7 @@
             android:id="@+id/edt_outcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/outcome" />
     </com.google.android.material.textfield.TextInputLayout>
 

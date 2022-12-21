@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.tugas.myapplication.R
 import com.tugas.myapplication.database.Money
 import com.tugas.myapplication.databinding.ListMoneyItemBinding
 import com.tugas.myapplication.helper.MoneyDiffCallback
@@ -17,6 +18,7 @@ class ListMoneyAdapter : RecyclerView.Adapter<ListMoneyAdapter.ListMoneyViewHold
         val diffCallback = MoneyDiffCallback(this.listMoney, listMoney)
         val diffResult = DiffUtil.calculateDiff(diffCallback)
         this.listMoney.clear()
+        this.notifyDataSetChanged()
         this.listMoney.addAll(listMoney)
         diffResult.dispatchUpdatesTo(this)
     }
@@ -38,8 +40,8 @@ class ListMoneyAdapter : RecyclerView.Adapter<ListMoneyAdapter.ListMoneyViewHold
         fun bind(money: Money) {
             binding.apply {
                 tvTitle.text  =money.transaction
-                tvIncome.text = money.income
-                tvOutcome.text = money.outcome
+                tvIncome.text = StringBuilder(itemView.context.getString(R.string.plus)).append(money.income)
+                tvOutcome.text = StringBuilder(itemView.context.getString(R.string.min)).append(money.outcome)
                 cardView.setOnClickListener {
                     val intent = Intent(itemView.context, AddUpdateMoneyActivity::class.java)
                     intent.putExtra(AddUpdateMoneyActivity.EXTRA_DATA, money)
